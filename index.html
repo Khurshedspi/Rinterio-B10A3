@@ -26,10 +26,10 @@
             theme: {
                 extend: {
                     colors: {
-                        primary: 'rgb(139, 195, 74)',
-                        secondary: 'rgb(17, 17, 17)',
-                        body: 'rgb(248, 246, 243)',
-                        accent: 'rgb(106, 151, 57)',
+                        primary_btn: '#ABEF5F',
+                        heading_text: '#212121',
+                        heading_p: '#494949',
+                        card_p: '#737373',
                         body_neutral: 'rgb(51, 51, 51)',
                     },
                     fontFamily: {
@@ -49,7 +49,56 @@
 <body class="font-Manrope">
     <!-- header  -->
     <header>
-        
+        <!-- ---------------------------------------------===============Navbar starts here ========================= ------------------------------------ -->
+
+        <nav class="container mx-auto">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+
+                    <h5 class="btn btn-ghost text-[32px] font-extrabold text-heading_text"> <i
+                            class="fa-solid fa-arrow-right rounded-full flex  items-center justify-center bg-primary_btn w-[35px] h-[35px] text-[16px] -rotate-45 ml-3"></i>
+                        Rinterio</h5>
+
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 text-card_p ">
+                        <li class="hover:text-slate-950 transition-color duration-200"><a>Home</a></li>
+                        <li class="hover:text-slate-950 transition-color duration-200"><a>Services</a></li>
+                        <li class="hover:text-slate-950 transition-color duration-200"><a>Portfolio</a></li>
+                        <li class="hover:text-slate-950 transition-color duration-200"><a>Blogs</a></li>
+                        <li class="hover:text-slate-950 transition-color duration-200"><a>Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <div class=" max-sm:hidden flex  space-x-2 justify-center items-center ">
+                        <i
+                            class="fa-solid fa-magnifying-glass rounded-full flex  items-center justify-center  w-[28px] h-[28px] text-[12px] bg-[#FFFFFF]"></i>
+                        <i
+                            class="fa-solid fa-cart-shopping rounded-full flex  items-center justify-center w-[28px] h-[28px] text-[12px] bg-[#FFFFFF]"></i>
+                        <a
+                            class="btn bg-primary_btn border-none  text-xl font-extrabold rounded-[32px] mx-auto text-[#1C1C1C] flex  items-center justify-center">
+                            Book Consult
+                            <i
+                                class="fa-solid fa-arrow-right rounded-full flex  items-center justify-center bg-[#1C1C1C] w-[35px] h-[35px] text-[16px] -rotate-45 ml-3 text-white"></i></a>
+
+                    </div>
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <i class="fa-solid fa-bars"></i>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm right-0 dropdown-content bg-base-100 rounded-box z-[1] mt-3 text-card_p  p-2 shadow">
+                            <li class="hover:text-slate-950 transition-color duration-200"><a>Home</a></li>
+                        <li class="hover:text-slate-950 transition-color duration-200"><a>Services</a></li>
+                        <li class="hover:text-slate-950 transition-color duration-200"><a>Portfolio</a></li>
+                        <li class="hover:text-slate-950 transition-color duration-200"><a>Blogs</a></li>
+                        <li class="hover:text-slate-950 transition-color duration-200"><a>Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- ---------------------------------------------===============Navbar ends here ========================= ------------------------------------ -->
     </header>
 
     <!-- main  -->
